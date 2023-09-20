@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(to right, #0c0c0c, #831187);
+  color: #ef9af2;
+}
+header {
+  text-align: center;
+}
+.active {
+  pointer-events: none;
+  background-color: #570296;
+}
+ul {
+  overflow: hidden;
+  background: linear-gradient(to left, #0c0c0c81, #83118783);
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+li a:hover:not(.active) {
+  background-color: #831187;
+}
+h1 {
+  padding: 40px;
+}
+footer {
+  background-color: #0c0c0c;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer h6 {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+/* --------------------------------------------Audiovisuales--------------------------------------------- */
+.audiovisuales {
+  padding: 30px 0 0 0;
+}
+.audiovisuales video {
+  float: left;
+  height: 400px;
+  width: auto;
+}
+.audiovisuales .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.imagenes {
+  height: 400px;
+  overflow: hidden;
+}
+.audiovisuales .imagenes img {
+  margin: 0;
+  object-fit: cover;
+  height: 400px;
+  max-width: 80px;
+}
+.audiovisuales .imagenes img:hover {
+  max-width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  body {
+    background: linear-gradient(to right, #0c0c0c, #831187);
+    color: #ef9af2;
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    text-align: center;
+  }
+  .active {
+    pointer-events: none;
+    background-color: #570296;
+  }
+  ul {
+    overflow: hidden;
+    background: linear-gradient(to left, #0c0c0c81, #83118783);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  li a:hover:not(.active) {
+    background-color: #831187;
+  }
+  h1 {
+    padding: 40px;
+    font-size: 1.5em;
+  }
+  h2 {
+    margin: 20px 20px 20px 20px;
+    font-size: 1.1em;
+  }
+  footer {
+    background-color: #0c0c0c;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 0.4em;
+  }
+  footer h6 {
+    width: auto;
+    font-size: 0.4em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 1px;
+  }
+  /* --------------------------------------------Audiovisuales--------------------------------------------- */
+  .audiovisuales {
+    padding: 30px 0 0 0;
+  }
+  .audiovisuales video {
+    width: 100%;
+  }
+  .audiovisuales .imagenes {
+    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 20px 0 20px;
+  }
+  .audiovisuales .imagenes img {
+    margin: 0;
+    object-fit: cover;
+    height: 100px;
+    width: auto;
+  }
+}
